@@ -1,11 +1,16 @@
 export default function HomePage() {
   return (
     <main className="bg-white text-gray-800 font-sans">
-      <section className="bg-[url('/como-lake.jpg')] bg-cover bg-center text-white p-12 text-center">
+      {/* Sezione principale con sfondo preso da public/como-lake.jpg */}
+      <section
+        style={{ backgroundImage: "url('/como-lake.jpg')" }}
+        className="bg-cover bg-center text-white p-12 text-center"
+      >
         <h1 className="text-4xl md:text-6xl font-bold mb-4">Vitivinicola Cernobbio</h1>
         <h2 className="text-2xl md:text-3xl italic">Gigi e Cristina Winery – Lago di Como</h2>
       </section>
 
+      {/* Descrizione bilingue */}
       <section className="p-8 md:p-16 max-w-4xl mx-auto">
         <p className="text-lg md:text-xl mb-6">
           Affacciata sul Lago di Como, Gigi e Cristina Winery è un esempio autentico di viticoltura eroica.
@@ -19,6 +24,7 @@ export default function HomePage() {
         </p>
       </section>
 
+      {/* Sezione Esperienze */}
       <section className="bg-[#f5f5f0] p-8 md:p-16">
         <div className="max-w-4xl mx-auto">
           <h3 className="text-2xl font-semibold mb-4">Esperienze</h3>
@@ -30,18 +36,40 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Sezione Contatti & Prenotazioni */}
       <section className="p-8 md:p-16 max-w-4xl mx-auto">
-        <h3 className="text-2xl font-semibold mb-4">Contatti & Prenotazioni</h3>
+        <h3 className="text-2xl font-semibold mb-4">Contatti &amp; Prenotazioni</h3>
         <p className="mb-2">📍 Via Ronco 33, 22026 Maslianico (CO), Italia</p>
-        <p className="mb-2">📞 <a href="tel:+393338746401" className="text-green-700 hover:underline">+39 333 8746401</a></p>
-        <p className="mb-2">📧 <a href="mailto:vitivinicolacernobbio@gmail.com" className="text-green-700 hover:underline">vitivinicolacernobbio@gmail.com</a></p>
-        <p className="mb-2">💬 <a href="https://wa.me/393338746401" className="text-green-700 hover:underline">Prenota su WhatsApp</a></p>
+        <p className="mb-2">
+          📞 <a href="tel:+393338746401" className="text-green-700 hover:underline">+39 333 8746401</a>
+        </p>
+        <p className="mb-2">
+          📧 <a href="mailto:vitivinicolacernobbio@gmail.com" className="text-green-700 hover:underline">vitivinicolacernobbio@gmail.com</a>
+        </p>
+        <p className="mb-2">
+          💬 <a href="https://wa.me/393338746401" className="text-green-700 hover:underline">Prenota su WhatsApp</a>
+        </p>
         <div className="mt-4">
-          <a href="https://www.instagram.com/vitivinicolacernobbio/" target="_blank" rel="noopener noreferrer" className="mr-4 text-pink-600 hover:underline">Instagram</a>
-          <a href="https://www.facebook.com/vitivinicola.cernobbio/?locale=it_IT" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline">Facebook</a>
+          <a
+            href="https://www.instagram.com/vitivinicolacernobbio/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mr-4 text-pink-600 hover:underline"
+          >
+            Instagram
+          </a>
+          <a
+            href="https://www.facebook.com/vitivinicola.cernobbio/?locale=it_IT"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 hover:underline"
+          >
+            Facebook
+          </a>
         </div>
       </section>
 
+      {/* Footer */}
       <footer className="bg-[#e6e4dd] text-center text-sm text-gray-600 p-4">
         © {new Date().getFullYear()} Gigi e Cristina Winery – Vitivinicola Cernobbio. All rights reserved.
       </footer>
